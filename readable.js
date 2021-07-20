@@ -1,4 +1,4 @@
-var Stream = require('stream');
+var Stream = require('readable-stream');
 if (process.env.READABLE_STREAM === 'disable' && Stream) {
   module.exports = Stream.Readable;
   Object.assign(module.exports, Stream);
